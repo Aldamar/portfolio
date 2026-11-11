@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emmanuel Aldana — Desarrollo de sistemas web</title>
+  <meta name="description"
+    content="Desarrollador full-stack y arquitecto de sistemas web. Plataformas web, identidad digital (OAuth 2.0), Laravel y migración de sistemas legados. Disponible para empleo y proyectos freelance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Instrument+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <!-- Tokens, base y componentes propios -->
+  <link rel="stylesheet" href="app.css" />
+  <!-- Tailwind CSS v4 (compilado en el navegador). Para producción conviene compilarlo con el CLI o Vite. -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body data-aud="empleo">
+  <header
+    class="sticky top-0 z-20 border-b border-(--line) backdrop-blur-[10px] bg-[color-mix(in_srgb,var(--paper)_86%,transparent)]">
+    <nav class="wrap flex h-16 items-center gap-6">
+      <a class="mr-auto font-(family-name:--serif) text-[22px] italic" href="#top"><b
+          class="font-medium not-italic">Emmanuel Aldana</b> — sistemas
+        web</a>
+      <div class="hidden gap-[22px] text-[15px] md:flex">
+        <a class="opacity-75 transition-opacity hover:opacity-100" href="#trabajo">Trabajo</a>
+        <a class="opacity-75 transition-opacity hover:opacity-100" href="#servicios">Servicios</a>
+        <a class="opacity-75 transition-opacity hover:opacity-100" href="#sobre-mi">Sobre mí</a>
+        <a class="opacity-75 transition-opacity hover:opacity-100" href="#contacto">Contacto</a>
+      </div>
+      <span class="pill"><i class="dot"></i>Disponible · Guadalajara</span>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="wrap pt-[clamp(48px,9vw,120px)] pb-[clamp(40px,6vw,80px)]">
+      <div class="switch" role="group" aria-label="¿Qué buscas?">
+        <button type="button" data-aud="empleo" aria-pressed="true">
+          Busco talento para mi equipo
+        </button>
+        <button type="button" data-aud="freelance" aria-pressed="false">
+          Tengo un proyecto
+        </button>
+      </div>
+      <h1 class="max-w-[13ch] text-[length:clamp(44px,8.6vw,128px)]">
+        Modernizo sistemas que ya no <em>escalan.</em>
+      </h1>
+      <div class="mt-11 grid items-end gap-10 min-[861px]:grid-cols-[1.2fr_1fr]">
+        <div>
+          <p class="max-w-[46ch] text-[length:clamp(18px,1.6vw,22px)] text-(--ink-2)" data-for="empleo">
+            Desarrollador full-stack y arquitecto de sistemas web. Diseño y
+            construyo plataformas con Laravel para hasta 25,000 usuarios,
+            integro identidad y acceso con OAuth 2.0 y migro sistemas legados
+            sin detener la operación. Hoy coordino Desarrollo Web en la
+            Universidad de Guadalajara.
+          </p>
+          <p class="max-w-[46ch] text-[length:clamp(18px,1.6vw,22px)] text-(--ink-2)" data-for="freelance">
+            Desarrollo plataformas web, migro sistemas heredados e integro
+            servicios para organizaciones que necesitan modernizarse sin
+            detener su operación. Trato directo conmigo, de la arquitectura al
+            despliegue.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-3 min-[861px]:justify-end">
+          <a class="btn solid" data-for="empleo" href="cv.pdf" download="CV-Emmanuel-Aldana.pdf">Descargar CV <span
+              class="arr">↓</span></a>
+          <a class="btn solid" data-for="freelance" href="#contacto">Cotizar un proyecto <span class="arr">→</span></a>
+          <a class="btn" href="#trabajo">Ver casos <span class="arr">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="stats rv">
+        <div><strong>8+</strong><span>años desarrollando software</span></div>
+        <div>
+          <strong>25 mil</strong><span>usuarios en la plataforma más grande</span>
+        </div>
+        <div>
+          <strong>7</strong><span>proyectos, tres de ellos públicos en producción</span>
+        </div>
+        <div><strong>12</strong><span>sistemas legados migrados</span></div>
+      </div>
+    </div>
+
+    <section id="trabajo" class="py-[clamp(64px,9vw,128px)]">
+      <div class="wrap">
+        <div class="rv mb-[clamp(28px,4vw,56px)] flex flex-wrap items-end justify-between gap-6">
+          <div>
+            <span class="eyebrow">Proyectos</span>
+            <h2 class="mt-3 max-w-[14ch] text-[length:clamp(36px,5.6vw,76px)]">
+              Siete proyectos, de la arquitectura a <em>producción.</em>
+            </h2>
+          </div>
+          <p class="max-w-[38ch] text-(--ink-2)">
+            Plataformas institucionales, identidad digital y migraciones de
+            datos para la Universidad de Guadalajara y la industria.
+          </p>
+        </div>
+        <!-- EDITAR: sustituir las portadas CSS por capturas reales y añadir métricas si las tienes -->
+        <div class="grid grid-cols-12 gap-[clamp(16px,2.4vw,32px)]">
+          <a class="case wide rv col-span-12 block" href="https://investigacion.cucea.udg.mx/" target="_blank"
+            rel="noopener">
+            <div class="cover d">
+              <span class="tag">Plataforma · 2023–2024</span><i></i><i></i><i></i>
+            </div>
+            <div class="flex justify-between gap-4 px-0.5 pt-[18px]">
+              <div>
+                <h3 class="text-[length:clamp(24px,2.4vw,34px)]">
+                  Plataforma de Investigación CUCEA
+                </h3>
+                <p class="mt-1.5 max-w-[48ch] text-[15px] text-(--ink-2)">
+                  Líder de desarrollo · Full-stack · Laravel 12 — Centraliza y
+                  da visibilidad a los proyectos de investigación del centro
+                  universitario, con generación automática de CVs digitales
+                  para investigadores.
+                </p>
+              </div>
+              <div class="text-right whitespace-nowrap">
+                <b class="block font-(family-name:--serif) text-[28px] leading-none font-normal text-(--accent)">En vivo
+                  ↗</b><span class="text-xs text-(--ink-2)">investigacion.cucea.udg.mx</span>
+              </div>
+            </div>
+          </a>
+          <a class="case rv col-span-12 block md:col-span-6" href="https://hermes.cucea.udg.mx/" target="_blank"
+            rel="noopener">
+            <div class="cover f">
+              <span class="tag">Constancias · 2025–hoy</span><i></i><i></i><i></i>
+            </div>
+            <div class="flex justify-between gap-4 px-0.5 pt-[18px]">
+              <div>
+                <h3 class="text-[length:clamp(24px,2.4vw,34px)]">Hermes</h3>
+                <p class="mt-1.5 max-w-[48ch] text-[15px] text-(--ink-2)">
+                  Diseño del sistema y desarrollo principal · Laravel 13 ·
+                  Filament 5 — Buzón digital del CUCEA para emitir, consultar
+                  y validar constancias docentes: acceso con cuenta
+                  institucional, descarga en PDF oficial y validación por
+                  folio.
+                </p>
+              </div>
+              <div class="text-right whitespace-nowrap">
+                <b class="block font-(family-name:--serif) text-[28px] leading-none font-normal text-(--accent)">En vivo
+                  ↗</b><span class="text-xs text-(--ink-2)">hermes.cucea.udg.mx</span>
+              </div>
+            </div>
+          </a>
+          <a class="case rv col-span-12 block md:col-span-6" href="https://minerva.cucea.udg.mx/" target="_blank"
+            rel="noopener">
+            <div class="cover g">
+              <span class="tag">Programación académica · 2025–hoy</span><i></i><i></i><i></i>
+            </div>
+            <div class="flex justify-between gap-4 px-0.5 pt-[18px]">
+              <div>
+                <h3 class="text-[length:clamp(24px,2.4vw,34px)]">Minerva</h3>
+                <p class="mt-1.5 max-w-[48ch] text-[15px] text-(--ink-2)">
+                  Diseño del sistema y desarrollo principal · Laravel 13 ·
+                  Filament 5 — Consulta, análisis y programación académica:
+                  asignación de plantilla docente, aulas y grupos, con mapa de
+                  calor de ocupación, cupos proyectados y detección de cruces
+                  de horario.
+                </p>
+              </div>
+              <div class="text-right whitespace-nowrap">
+                <b class="block font-(family-name:--serif) text-[28px] leading-none font-normal text-(--accent)">En vivo
+                  ↗</b><span class="text-xs text-(--ink-2)">minerva.cucea.udg.mx</span>
+              </div>
+            </div>
+          </a>
+          <div class="case rv col-span-12 md:col-span-6">
+            <div class="cover c">
+              <span class="tag">Identidad · 2024</span><i></i><i></i>
+            </div>
+            <div class="flex justify-between gap-4 px-0.5 pt-[18px]">
+              <div>
+                <h3 class="text-[length:clamp(24px,2.4vw,34px)]">
+                  OAuth 2.0 e identidad digital
+                </h3>
+                <p class="mt-1.5 max-w-[48ch] text-[15px] text-(--ink-2)">
+                  Arquitecto · Tesis de maestría — Servicio que unifica las
+                  bases de usuarios y comparte la identidad entre los sistemas
+                  del CUCEA.
+                </p>
+              </div>
+              <div class="text-right whitespace-nowrap">
+                <b
+                  class="block font-(family-name:--serif) text-[28px] leading-none font-normal text-(--accent)">6</b><span
+                  class="text-xs text-(--ink-2)">sistemas conectados</span>
+              </div>
+            </div>
+          </div>
+          <div class="case rv col-span-12 md:col-span-6">
+            <div class="cover b">
+              <span class="tag">Legacy · 2022–hoy</span><i></i><i></i><i></i>
+            </div>
+            <div class="flex justify-between gap-4 px-0.5 pt-[18px]">
+              <div>
+                <h3 class="text-[length:clamp(24px,2.4vw,34px)]">
+                  Migración de sistemas legados
+                </h3>
+                <p class="mt-1.5 max-w-[48ch] text-[15px] text-(--ink-2)">
+                  Arquitecto y programador — Sistemas heredados convertidos en
+                  servicios API REST que los sistemas actuales siguen
+                  consumiendo, o migrados a sistemas nuevos.
+                </p>
+              </div>
+              <div class="text-right whitespace-nowrap">
+                <b
+                  class="block font-(family-name:--serif) text-[28px] leading-none font-normal text-(--accent)">12</b><span
+                  class="text-xs text-(--ink-2)">sistemas migrados</span>
+              </div>
+            </div>
+          </div>
+          <div class="case rv col-span-12 md:col-span-6">
+            <div class="cover a">
+              <span class="tag">Portal · 2024–hoy</span><i></i><i></i><i></i>
+            </div>
+            <div class="flex justify-between gap-4 px-0.5 pt-[18px]">
+              <div>
+                <h3 class="text-[length:clamp(24px,2.4vw,34px)]">
+                  Nuevo Portal del CUCEA
+                </h3>
+                <p class="mt-1.5 max-w-[48ch] text-[15px] text-(--ink-2)">
+                  Full-stack · Drupal — Diseño y desarrollo de módulos, con
+                  optimización de consultas recursivas y ordenamiento de
+                  datos.
+                </p>
+              </div>
+              <div class="text-right whitespace-nowrap">
+                <b
+                  class="block font-(family-name:--serif) text-[28px] leading-none font-normal text-(--accent)">Drupal</b><span
+                  class="text-xs text-(--ink-2)">UdeG</span>
+              </div>
+            </div>
+          </div>
+          <div class="case rv col-span-12 md:col-span-6">
+            <div class="cover e">
+              <span class="tag">Datos · 2019</span><i></i><i></i><i></i>
+            </div>
+            <div class="flex justify-between gap-4 px-0.5 pt-[18px]">
+              <div>
+                <h3 class="text-[length:clamp(24px,2.4vw,34px)]">
+                  Migración de base de datos entre ERP
+                </h3>
+                <p class="mt-1.5 max-w-[48ch] text-[15px] text-(--ink-2)">
+                  Programador — Análisis, estructuración y migración de 7 GB
+                  de datos y 6 módulos grandes de un ERP a medida a un ERP
+                  estándar del mercado, de forma continua y cuidando la
+                  integridad de los datos.
+                </p>
+              </div>
+              <div class="text-right whitespace-nowrap">
+                <b class="block font-(family-name:--serif) text-[28px] leading-none font-normal text-(--accent)">Sin
+                  paros</b><span class="text-xs text-(--ink-2)">producción ininterrumpida</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="bg-(--paper-2) py-[clamp(64px,9vw,128px)]">
+      <div class="wrap">
+        <div class="rv mb-[clamp(28px,4vw,56px)] flex flex-wrap items-end justify-between gap-6">
+          <div>
+            <span class="eyebrow">Servicios freelance</span>
+            <h2 class="mt-3 max-w-[14ch] text-[length:clamp(36px,5.6vw,76px)]">
+              Tres formas de trabajar <em>juntos.</em>
+            </h2>
+          </div>
+          <p class="max-w-[38ch] text-(--ink-2)">
+            Alcance claro desde el inicio y un solo interlocutor técnico: yo.
+          </p>
+        </div>
+        <!-- EDITAR: añadir precios "desde" y plazos si quieres mostrarlos -->
+        <div class="grid gap-5 min-[901px]:grid-cols-3">
+          <article class="rv flex flex-col gap-3.5 rounded-[18px] border border-(--line) bg-(--card) p-7">
+            <span class="eyebrow">Desarrollo</span>
+            <h3 class="text-[30px]">Plataformas web a medida</h3>
+            <ul class="svc-list grid gap-2 text-[15px] text-(--ink-2)">
+              <li>Laravel, Filament y Livewire</li>
+              <li>APIs REST con MariaDB o PostgreSQL</li>
+              <li>Despliegue con Docker</li>
+            </ul>
+            <p class="mt-auto border-t border-(--line) pt-[18px] text-sm text-(--ink-2)">
+              <b class="font-(family-name:--serif) text-[26px] font-normal text-(--ink)">A medida</b>
+              · cotización según alcance
+            </p>
+          </article>
+          <article class="rv flex flex-col gap-3.5 rounded-[18px] border border-(--line) bg-(--card) p-7">
+            <span class="eyebrow">Modernización</span>
+            <h3 class="text-[30px]">Migración de sistemas legados</h3>
+            <ul class="svc-list grid gap-2 text-[15px] text-(--ink-2)">
+              <li>Diagnóstico del sistema actual</li>
+              <li>Migración de datos con integridad</li>
+              <li>APIs sobre lo que ya funciona</li>
+            </ul>
+            <p class="mt-auto border-t border-(--line) pt-[18px] text-sm text-(--ink-2)">
+              <b class="font-(family-name:--serif) text-[26px] font-normal text-(--ink)">A medida</b>
+              · cotización según alcance
+            </p>
+          </article>
+          <article class="rv flex flex-col gap-3.5 rounded-[18px] border border-(--line) bg-(--card) p-7">
+            <span class="eyebrow">Arquitectura</span>
+            <h3 class="text-[30px]">Identidad e integración</h3>
+            <ul class="svc-list grid gap-2 text-[15px] text-(--ink-2)">
+              <li>Identidad unificada con OAuth 2.0</li>
+              <li>Integración entre sistemas y APIs REST</li>
+              <li>Pipelines DevOps con Docker y GitLab</li>
+            </ul>
+            <p class="mt-auto border-t border-(--line) pt-[18px] text-sm text-(--ink-2)">
+              <b class="font-(family-name:--serif) text-[26px] font-normal text-(--ink)">A medida</b>
+              · cotización según alcance
+            </p>
+          </article>
+        </div>
+        <div class="steps rv mt-14 grid grid-cols-2 gap-5 min-[901px]:grid-cols-4">
+          <div>
+            <h4 class="mt-2 mb-1 text-[17px] font-medium">Descubrir</h4>
+            <p class="text-[14.5px] text-(--ink-2)">
+              Entiendo el problema, los sistemas actuales y las restricciones.
+            </p>
+          </div>
+          <div>
+            <h4 class="mt-2 mb-1 text-[17px] font-medium">Definir</h4>
+            <p class="text-[14.5px] text-(--ink-2)">
+              Propuesta con arquitectura, alcance y calendario.
+            </p>
+          </div>
+          <div>
+            <h4 class="mt-2 mb-1 text-[17px] font-medium">Construir</h4>
+            <p class="text-[14.5px] text-(--ink-2)">
+              Entregas por etapas, con demos para validar el avance.
+            </p>
+          </div>
+          <div>
+            <h4 class="mt-2 mb-1 text-[17px] font-medium">Entregar</h4>
+            <p class="text-[14.5px] text-(--ink-2)">
+              Despliegue, documentación y traspaso al equipo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="py-[clamp(64px,9vw,128px)]">
+      <div class="wrap grid gap-[clamp(32px,6vw,96px)] min-[861px]:grid-cols-[1fr_1.25fr]">
+        <div class="rv">
+          <span class="eyebrow">Sobre mí</span>
+          <h2 class="mt-3 mb-6 text-[length:clamp(34px,4.6vw,64px)]">
+            Arquitectura, código y <em>equipo.</em>
+          </h2>
+          <p class="mb-3.5 max-w-[44ch] text-(--ink-2)">
+            Soy desarrollador full-stack especializado en modernizar sistemas
+            institucionales, integrar servicios empresariales y diseñar
+            soluciones de identidad y acceso (IAM).
+          </p>
+          <p class="mb-3.5 max-w-[44ch] text-(--ink-2)">
+            Trabajo entre la arquitectura y el código: planifico, coordino al
+            equipo y también programo. Me muevo bien con áreas no técnicas
+            para aterrizar requerimientos.
+          </p>
+          <div class="mt-[22px] mb-7 flex flex-wrap gap-2">
+            <span class="chip">PHP 8</span><span class="chip">Laravel 13</span><span class="chip">Filament</span><span
+              class="chip">Livewire</span><span class="chip">Drupal</span><span class="chip">Tailwind</span><span
+              class="chip">Bootstrap</span><span class="chip">JavaScript</span><span class="chip">Python</span><span
+              class="chip">Django</span><span class="chip">MariaDB</span><span class="chip">PostgreSQL</span><span
+              class="chip">SQL Server</span><span class="chip">Redis</span><span class="chip">Pest</span><span
+              class="chip">Docker</span><span class="chip">GitLab CI</span><span class="chip">OAuth 2.0</span><span
+              class="chip">Scrum</span>
+          </div>
+          <p class="mb-[26px] max-w-[46ch] text-[14.5px] text-(--ink-2)">
+            Maestría (2023–2024) y Licenciatura (2013–2018) en Tecnologías de
+            la Información, CUCEA, Universidad de Guadalajara · SCRUM
+            Fundamentals (SCRUMstudy) · DevOps (ITJuana) ·
+            <a class="underline" href="https://www.hackerrank.com/certificates/23f8e98865bb" target="_blank"
+              rel="noopener">Software Engineer (HackerRank)</a>
+            · Inglés C1–C2:
+            <a class="underline" href="https://cert.efset.org/4C1ArM" target="_blank" rel="noopener">EF SET C2</a>
+            y
+            <a class="underline" href="https://app.smalltalk2.me/cert/bc71b7e5" target="_blank" rel="noopener">expresión
+              oral C1</a>
+          </p>
+          <a class="btn" href="cv.pdf" download="CV-Emmanuel-Aldana.pdf">Descargar CV <span class="arr">↓</span></a>
+        </div>
+        <ol class="rv">
+          <li class="grid gap-1 border-t border-(--line) py-[22px] min-[861px]:grid-cols-[140px_1fr] min-[861px]:gap-5">
+            <time class="pt-1.5 text-[13px] text-(--ink-2)">sep 2022 — hoy</time>
+            <div>
+              <h3 class="text-[26px]">
+                Coordinador de Desarrollo Web
+                <small class="font-(family-name:--sans) text-[15px] tracking-normal text-(--ink-2)">· Universidad de
+                  Guadalajara</small>
+              </h3>
+              <p class="mt-1.5 text-[15px] text-(--ink-2)">
+                Planifico, diseño y gestiono los desarrollos web en un equipo
+                de 7 personas; dirijo a 2 desarrolladores y hasta 4 en
+                proyectos grandes. Con Docker bajé la configuración de un
+                proyecto de 1 día a 1 hora y puse en marcha los primeros
+                pipelines DevOps con Docker y GitLab.
+              </p>
+            </div>
+          </li>
+          <li class="grid gap-1 border-t border-(--line) py-[22px] min-[861px]:grid-cols-[140px_1fr] min-[861px]:gap-5">
+            <time class="pt-1.5 text-[13px] text-(--ink-2)">may 2019 — ago 2022</time>
+            <div>
+              <h3 class="text-[26px]">
+                Programador full-stack
+                <small class="font-(family-name:--sans) text-[15px] tracking-normal text-(--ink-2)">· Llaves Altuna de
+                  México</small>
+              </h3>
+              <p class="mt-1.5 text-[15px] text-(--ink-2)">
+                Migré 7 GB de datos y 6 módulos grandes de un ERP a otro sin
+                interrumpir la producción, y desarrollé en equipo módulos de
+                Ventas, Diseño e Inventario con C#, Visual Basic y SQL Server.
+              </p>
+            </div>
+          </li>
+          <li class="grid gap-1 border-y border-(--line) py-[22px] min-[861px]:grid-cols-[140px_1fr] min-[861px]:gap-5">
+            <time class="pt-1.5 text-[13px] text-(--ink-2)">feb 2018 — abr 2019</time>
+            <div>
+              <h3 class="text-[26px]">
+                Programador Jr.
+                <small class="font-(family-name:--sans) text-[15px] tracking-normal text-(--ink-2)">· Universidad de
+                  Guadalajara</small>
+              </h3>
+              <p class="mt-1.5 text-[15px] text-(--ink-2)">
+                Desarrollo y mantenimiento de sistemas de control de
+                correspondencia (oficios y sus respuestas) con PHP nativo.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contacto" class="bg-(--ink) py-[clamp(64px,9vw,128px)] text-(--paper)">
+      <div class="wrap">
+        <span class="eyebrow opacity-60">Contacto</span>
+        <h2 class="rv mt-3.5 mb-12 max-w-[12ch] text-[length:clamp(44px,8vw,116px)]">
+          ¿Hablamos?
+        </h2>
+        <div class="grid gap-5 md:grid-cols-2">
+          <a class="door rv" href="mailto:emmanuel.aame@gmail.com?subject=Oportunidad%20laboral">
+            <span class="eyebrow opacity-60">Para empresas</span>
+            <h3 class="text-[34px]">Súmame a tu equipo</h3>
+            <p class="max-w-[40ch] opacity-75">
+              Roles de arquitectura de software, full-stack o liderazgo
+              técnico. Presencial o híbrido en el Área Metropolitana de
+              Guadalajara.
+            </p>
+            <span class="mt-[18px] font-medium">Escribirme sobre un puesto →</span>
+          </a>
+          <a class="door rv" href="mailto:emmanuel.aame@gmail.com?subject=Nuevo%20proyecto">
+            <span class="eyebrow opacity-60">Para clientes</span>
+            <h3 class="text-[34px]">Empecemos tu proyecto</h3>
+            <p class="max-w-[40ch] opacity-75">
+              Cuéntame qué sistema tienes hoy, qué necesitas y para cuándo. Te
+              respondo con una propuesta.
+            </p>
+            <span class="mt-[18px] font-medium">Pedir una propuesta →</span>
+          </a>
+        </div>
+        <footer class="flex flex-wrap justify-between gap-3 pt-10 pb-8 text-sm opacity-70">
+          <span>© 2026 Emmanuel Aldana</span>
+          <div class="flex gap-5">
+            <a href="https://www.linkedin.com/in/aldamar/" target="_blank" rel="noopener">LinkedIn</a><a
+              href="mailto:emmanuel.aame@gmail.com">Correo</a>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Selector de audiencia: también funciona con ?para=empleo o ?para=freelance en el enlace
+    const btns = [...document.querySelectorAll(".switch button")];
+    function setAud(a, save) {
+      if (a !== "empleo" && a !== "freelance") return;
+      document.body.dataset.aud = a;
+      btns.forEach((b) =>
+        b.setAttribute("aria-pressed", b.dataset.aud === a),
+      );
+      if (save) {
+        try {
+          localStorage.setItem("aud", a);
+        } catch (e) { }
+      }
+    }
+    btns.forEach((b) =>
+      b.addEventListener("click", () => setAud(b.dataset.aud, true)),
+    );
+    let saved = null;
+    try {
+      saved = localStorage.getItem("aud");
+    } catch (e) { }
+    setAud(
+      new URLSearchParams(location.search).get("para") || saved || "empleo",
+    );
+
+    // Aparición al hacer scroll
+    const io = new IntersectionObserver(
+      (es) =>
+        es.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("in");
+            io.unobserve(e.target);
+          }
+        }),
+      { threshold: 0.12 },
+    );
+    document.querySelectorAll(".rv").forEach((el) => io.observe(el));
+  </script>
+</body>
+
+</html>
